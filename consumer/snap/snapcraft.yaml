@@ -1,0 +1,18 @@
+base: core18
+name: hungry-hippo
+version: '1'
+summary: The Hungry Hippo
+description: |
+  The Hungry Hippo needs feeding.
+grade: stable
+confinement: strict
+
+plugs:
+  mouth:
+    interface: content
+    content: foods
+    target: $SNAP_COMMON/food
+
+parts:
+  nothing:
+    plugin: nil

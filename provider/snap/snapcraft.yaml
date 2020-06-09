@@ -1,0 +1,21 @@
+base: core18
+name: hippo-food
+version: '1'
+summary: The Hungry Hippo's food
+description: |
+  Tasty Hippo feed.
+grade: stable
+confinement: strict
+
+slots:
+  food:
+    interface: content
+    content: foods
+    source:
+      read:
+        - $SNAP/food
+
+parts:
+  nothing:
+    plugin: dump
+    source: ./food.tar
