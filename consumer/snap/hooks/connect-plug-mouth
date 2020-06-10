@@ -1,2 +1,3 @@
 #!/bin/bash
 echo "Feeding the Hippo!"
+cp -r $SNAP_COMMON/food $SNAP_COMMON/moar_food
