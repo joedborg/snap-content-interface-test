@@ -7,6 +7,10 @@ description: |
 grade: stable
 confinement: strict
 
+apps:
+  hungry-hippo:
+    command: /bin/bash
+
 plugs:
   mouth:
     interface: content
